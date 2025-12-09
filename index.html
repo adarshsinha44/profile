@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>My Profile</title>
+    <style>
+        
+
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: #e5e7eb;
+        }
+
+        
+        nav {
+            position: fixed;
+            top: 0;
+            
+            width: 100%;
+            background: #0f172a;
+            padding: 12px 0;
+            box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+            text-align: center;
+            
+            
+        }
+
+        nav a {
+            color: #e5e7eb;
+           
+            margin: 0 15px;
+            font-size: 15px;
+            font-weight: 500;
+        }
+
+        
+
+        header {
+            background: #111827;
+            color: #e5e7eb;
+            text-align: center;
+            padding: 80px 20px 40px;
+            margin-top: 40px;
+            border-radius: 0 0 18px 18px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.25);
+        }
+        .skill-list {
+    list-style: none;
+    padding: 0;
+}
+
+.skill-item {
+    display: flex;
+    align-items: center;
+    background: #f3f4f6;
+    margin: 12px 0;
+    padding: 12px 18px;
+    border-radius: 12px;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.skill-item img {
+    width: 40px;
+    height: 40px;
+    margin-right: 15px;
+}
+
+
+        header h1 {
+            font-size: 40px;
+            margin: 0 0 10px;
+        }
+
+        header h3 {
+            font-size: 18px;
+            margin: 0;
+            font-weight: 400;
+            color: #9ca3af;
+        }
+
+        section {
+            width: 85%;
+            margin: 30px auto;
+            background: #ffffff;
+            padding: 30px 40px;
+            border-radius: 14px;
+            box-shadow: 0 0 12px rgba(0,0,0,0.08);
+            scroll-margin-top: 100px;
+        }
+
+        h2 {
+            font-size: 26px;
+            border-bottom: 3px solid #4b7f4a;
+            padding-bottom: 8px;
+            margin-top: 0;
+            color: #111827;
+        }
+
+        .skills span,
+        .languages span,
+        .hobbies span {
+            display: inline-block;
+            background: #1f2937;
+            color: white;
+            padding: 8px 14px;
+            border-radius: 18px;
+            margin: 6px;
+            font-size: 14px;
+        }
+
+        .project {
+            background: #f3f4f6;
+            padding: 16px;
+            border-radius: 10px;
+            margin: 12px 0;
+        }
+
+        .project h3 {
+            margin: 0 0 6px;
+        }
+
+        p {
+            font-size: 16px;
+            line-height: 1.6;
+            color: #6e7585;
+        }
+
+        footer {
+    width: 100%;
+    margin: 4px;
+    background: linear-gradient(135deg, #0f172a, #1e293b);
+    color: #e5e7eb;
+    text-align: center;
+    padding: 18px 12px;
+    font-size: 14px;
+    border-radius: 12px;
+    box-shadow: 0 8px 16px rgb(255, 255, 255);
+    letter-spacing: 0.5px;
+}
+
+
+
+footer p {
+    margin: 6px 0;
+}
+
+        
+    </style>
+</head>
+
+<body>
+
+
+<nav>
+    <a href="#about">About</a>
+    <a href="#skills">Skills</a>
+    <a href="#projects">Projects</a>
+    <a href="#hobbies">Hobbies</a>
+    <a href="#languages">Languages</a>
+    <a href="#college">College</a>
+    <a href="#contact">Contact</a>
+</nav>
+
+
+<header>
+    <h1>ADARSH SINHA</h1>
+    <h3>B.Tech CSE  | Software Engineer</h3>
+</header>
+
+
+<section id="about">
+    <h2>About Me</h2>
+    <p>
+        I am a dedicated and motivated Computer Science student with a strong interest
+        in software development, web technologies, and problem solving.
+        I aim to continuously improve my technical skills and contribute to real-world projects.
+    </p>
+</section>
+
+
+<section id="college">
+    <h2>College</h2>
+    <p><b>Degree:</b> B.Tech in Computer Science and Engineering</p>
+    <p><b>College:</b> VIT Chennai</p>
+    <p><b>Year:</b> 2021 - 2025</p>
+</section>
+
+
+<section id="skills">
+    <h2>Skills</h2>
+
+    <ol class="skill-list">
+        <li class="skill-item">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg">
+            Python
+        </li>
+
+        <li class="skill-item">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/c/c-original.svg">
+            C
+        </li>
+
+        <li class="skill-item">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/cplusplus/cplusplus-original.svg">
+            C++
+        </li>
+
+        <li class="skill-item">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg">
+            HTML
+        </li>
+
+        <li class="skill-item">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg">
+            CSS
+        </li>
+        <li class="skill-item">
+           <img src="https://cdn-icons-png.flaticon.com/512/2103/2103658.png">
+           DSA (Data Structures & Algorithms)
+         </li>
+        
+
+        
+
+        
+    </ol>
+</section>
+
+
+<section id="projects">
+    <h2>Projects</h2>
+    <div class="project">
+        <h3>Smart Irrigation System</h3>
+        <p>Automatic water pump control using soil moisture and DHT11 sensors to optimize water usage.</p>
+    </div>
+
+    <div class="project">
+        <h3>Personal Portfolio Website</h3>
+        <p>Professional profile website using only HTML and CSS to showcase skills and projects.</p>
+    </div>
+</section>
+
+
+<section id="hobbies">
+    <h2>Hobbies</h2>
+    <ul style="font-size: 17px; line-height: 2;">
+        <li>🏸 Badminton</li>
+        <li>💻 Coding</li>
+        <li>🎮 Gaming</li>
+    </ul>
+</section>
+
+
+<section id="languages">
+    <h2>Languages Known</h2>
+    <div class="languages">
+        <span>English</span>
+        <span>Hindi</span>
+        <span>German</span>
+    </div>
+</section>
+
+
+<section id="contact">
+    <h2>Contact</h2>
+    <p><b>Email:</b>
+    <a href="mailto:adarsh.sinha2024@gmail.com" class="email-link">
+        adarsh.sinha2024@gmail.com
+    </a>
+</p>
+    <p><b>Phone:</b> 9100000000</p>
+    <p><b>Location:</b> chennai,India</p>
+</section>
+
+<footer>
+    <p>© 2025 Adarsh Sinha | profile page website</p>
+</footer>
+
+</body>
+</html>
