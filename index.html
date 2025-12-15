@@ -3,37 +3,29 @@
 <head>
     <title>My Profile</title>
     <style>
-        
-
         body {
             margin: 0;
             font-family: Arial, sans-serif;
             background: #e5e7eb;
         }
 
-        
         nav {
             position: fixed;
             top: 0;
-            
             width: 100%;
             background: #0f172a;
             padding: 12px 0;
             box-shadow: 0 2px 6px rgba(0,0,0,0.2);
             text-align: center;
-            
-            
         }
 
         nav a {
             color: #e5e7eb;
-           
             margin: 0 15px;
             font-size: 15px;
             font-weight: 500;
+            text-decoration: none;
         }
-
-        
 
         header {
             background: #111827;
@@ -44,28 +36,6 @@
             border-radius: 0 0 18px 18px;
             box-shadow: 0 4px 12px rgba(0,0,0,0.25);
         }
-        .skill-list {
-    list-style: none;
-    padding: 0;
-}
-
-.skill-item {
-    display: flex;
-    align-items: center;
-    background: #f3f4f6;
-    margin: 12px 0;
-    padding: 12px 18px;
-    border-radius: 12px;
-    font-size: 16px;
-    font-weight: 500;
-}
-
-.skill-item img {
-    width: 40px;
-    height: 40px;
-    margin-right: 15px;
-}
-
 
         header h1 {
             font-size: 40px;
@@ -97,16 +67,32 @@
             color: #111827;
         }
 
-        .skills span,
-        .languages span,
-        .hobbies span {
-            display: inline-block;
-            background: #1f2937;
-            color: white;
-            padding: 8px 14px;
-            border-radius: 18px;
-            margin: 6px;
-            font-size: 14px;
+        p {
+            font-size: 16px;
+            line-height: 1.6;
+            color: #6e7585;
+        }
+
+        .skill-list {
+            list-style: none;
+            padding: 0;
+        }
+
+        .skill-item {
+            display: flex;
+            align-items: center;
+            background: #f3f4f6;
+            margin: 12px 0;
+            padding: 12px 18px;
+            border-radius: 12px;
+            font-size: 16px;
+            font-weight: 500;
+        }
+
+        .skill-item img {
+            width: 40px;
+            height: 40px;
+            margin-right: 15px;
         }
 
         .project {
@@ -116,41 +102,47 @@
             margin: 12px 0;
         }
 
-        .project h3 {
-            margin: 0 0 6px;
+        table {
+            width: 100%;
+            margin-top: 20px;
+            border-collapse: collapse;
         }
 
-        p {
-            font-size: 16px;
-            line-height: 1.6;
-            color: #6e7585;
+        th {
+            background: #1e293b;
+            color: white;
+            padding: 12px;
+        }
+
+        td {
+            padding: 10px;
+            text-align: center;
+            border-bottom: 1px solid #e5e7eb;
+        }
+
+        tr:nth-child(even) {
+            background: #f1f5f9;
         }
 
         footer {
-    width: 100%;
-    margin: 4px;
-    background: linear-gradient(135deg, #0f172a, #1e293b);
-    color: #e5e7eb;
-    text-align: center;
-    padding: 18px 12px;
-    font-size: 14px;
-    border-radius: 12px;
-    box-shadow: 0 8px 16px rgb(255, 255, 255);
-    letter-spacing: 0.5px;
-}
+            width: 100%;
+            margin: 4px;
+            background: linear-gradient(135deg, #0f172a, #1e293b);
+            color: #e5e7eb;
+            text-align: center;
+            padding: 18px 12px;
+            font-size: 14px;
+            border-radius: 12px;
+            box-shadow: 0 8px 16px rgb(255, 255, 255);
+        }
 
-
-
-footer p {
-    margin: 6px 0;
-}
-
-        
+        footer p {
+            margin: 6px 0;
+        }
     </style>
 </head>
 
 <body>
-
 
 <nav>
     <a href="#about">About</a>
@@ -162,12 +154,10 @@ footer p {
     <a href="#contact">Contact</a>
 </nav>
 
-
 <header>
     <h1>ADARSH SINHA</h1>
-    <h3>B.Tech CSE  | Software Engineer</h3>
+    <h3>B.Tech CSE | Software Engineer</h3>
 </header>
-
 
 <section id="about">
     <h2>About Me</h2>
@@ -178,7 +168,6 @@ footer p {
     </p>
 </section>
 
-
 <section id="college">
     <h2>College</h2>
     <p><b>Degree:</b> B.Tech in Computer Science and Engineering</p>
@@ -186,6 +175,103 @@ footer p {
     <p><b>Year:</b> 2024 - 2028</p>
 </section>
 
+<section id="academics">
+    <h2>Academic Details</h2>
+
+    <table>
+        <tr>
+            <th>Qualification / Semester</th>
+            <th>Subjects / Course</th>
+            <th>Board / University</th>
+            <th>Academic Year</th>
+        </tr>
+        <tr>
+            <td>10th Standard</td>
+            <td>Science, Mathematics, English</td>
+            <td>BSEB</td>
+            <td>2020 – 2021</td>
+        </tr>
+        <tr>
+            <td>12th Standard</td>
+            <td>Physics, Chemistry, Mathematics</td>
+            <td>CBSE</td>
+            <td>2022 – 2023</td>
+        </tr>
+        <tr>
+            <td>VIT Entrance Examination (Cleared)</td>
+            <td>PCM</td>
+            <td>VIT University</td>
+            <td>2024</td>
+        </tr>
+        <tr>
+            <td>B.Tech – 1st Semester</td>
+            <td>Python Programming</td>
+            <td>VIT University</td>
+            <td>2024 – 2025</td>
+        </tr>
+        <tr>
+            <td>B.Tech – 2nd Semester</td>
+            <td>Object Oriented Programming (OOPS)</td>
+            <td>VIT University</td>
+            <td>2024 – 2025</td>
+        </tr>
+        <tr>
+            <td>B.Tech – 3rd Semester</td>
+            <td>Data Structures & Algorithms (DSA)</td>
+            <td>VIT University</td>
+            <td>2025 – 2026</td>
+        </tr>
+        <tr>
+            <td>B.Tech – 4th Semester</td>
+            <td>Web Development</td>
+            <td>VIT University</td>
+            <td>2025 – 2026</td>
+        </tr>
+    </table>
+</section>
+
+<section id="achievements">
+    <h2>Achievements</h2>
+
+    <table>
+        <tr>
+            <th>S.No</th>
+            <th>Achievement</th>
+            <th>Level / Organization</th>
+            <th>Year</th>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>Cricket Team Head</td>
+            <td>School Level</td>
+            <td>2017</td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>Represented School in Inter-School Cricket Tournament</td>
+            <td>District Level</td>
+            <td>2018</td>
+        </tr>
+        <tr>
+            <td>3</td>
+            <td>Participated in College Hackathon</td>
+            <td>College Level</td>
+            <td>2024</td>
+        </tr>
+        <tr>
+            <td>4</td>
+            <td>Completed Python Certification</td>
+            <td>Online Platform</td>
+            <td>2024</td>
+        </tr>
+        <tr>
+            <td>5</td>
+            <td>Active Member of IEEE Computer Society</td>
+            <td>College Level</td>
+            <td>2025</td>
+        </tr>
+    </table>
+</section>
 
 <section id="skills">
     <h2>Skills</h2>
@@ -195,88 +281,102 @@ footer p {
             <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg">
             Python
         </li>
-
         <li class="skill-item">
             <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/c/c-original.svg">
             C
         </li>
-
         <li class="skill-item">
             <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/cplusplus/cplusplus-original.svg">
             C++
         </li>
-
         <li class="skill-item">
             <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg">
             HTML
         </li>
-
         <li class="skill-item">
             <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg">
             CSS
         </li>
         <li class="skill-item">
-           <img src="https://cdn-icons-png.flaticon.com/512/2103/2103658.png">
-           DSA (Data Structures & Algorithms)
-         </li>
-        
-
-        
-
-        
+            <img src="https://cdn-icons-png.flaticon.com/512/2103/2103658.png">
+            DSA (Data Structures & Algorithms)
+        </li>
     </ol>
 </section>
-
 
 <section id="projects">
     <h2>Projects</h2>
     <div class="project">
         <h3>Smart Irrigation System</h3>
-        <p>Automatic water pump control using soil moisture and DHT11 sensors to optimize water usage.</p>
+        <p>Automatic water pump control using soil moisture and DHT11 sensors.</p>
     </div>
-
     <div class="project">
         <h3>Personal Portfolio Website</h3>
-        <p>Professional profile website using only HTML and CSS to showcase skills and projects.</p>
+        <p>Profile website using only HTML and CSS.</p>
     </div>
 </section>
 
-
 <section id="hobbies">
     <h2>Hobbies</h2>
-    <ul style="font-size: 17px; line-height: 2;">
+    <ul>
         <li>🏸 Badminton</li>
         <li>💻 Coding</li>
         <li>🎮 Gaming</li>
     </ul>
 </section>
 
-
 <section id="languages">
     <h2>Languages Known</h2>
-    <div class="languages">
-        <span>English</span>
-        <span>Hindi</span>
-        <span>German</span>
-    </div>
+    <p>
+        <b>Hindi:</b> Native <br>
+        <b>English:</b> Intermediate <br>
+        <b>German:</b> Intermediate
+    </p>
 </section>
 
 
 <section id="contact">
     <h2>Contact</h2>
-    <p><b>Email:</b>
-    <a href="mailto:0000000000" class="email-link">
-        adarshsinha
-    </a>
-</p>
-    <p><b>Phone:</b> 9100000000</p>
-    <p><b>Location:</b> chennai,India</p>
+
+    <p>
+        <b>Email:</b>
+        <a href="mailto:adarshsinha@gmail.com" style="color:#4b7f4a; text-decoration:none;">
+            adarshsinha@gmail.com
+        </a>
+    </p>
+
+    
+    <p>
+        <b>GitHub:</b>
+        <a href="https://github.com/adarshsinha44"
+           target="_blank"
+           style="color:#4b7f4a; text-decoration:none;">
+            github.com/adarshsinha44
+        </a>
+    </p>
+
+    <p>
+        <b>LinkedIn:</b>
+        <a href="https://www.linkedin.com/in/adarsh-sinha-3ab73830b"
+           target="_blank"
+           style="color:#4b7f4a; text-decoration:none;">
+            linkedin.com/in/adarsh-sinha-3ab73830b
+        </a>
+    </p>
+
+    <p>
+        <b>Location:</b>
+        <a href="https://www.google.com/maps/search/?api=1&query=Chennai,India"
+           target="_blank"
+           style="color:#4b7f4a; text-decoration:none;">
+            Chennai, India
+        </a>
+    </p>
 </section>
 
 <footer>
-    <p>© 2025 Adarsh Sinha | profile page website</p>
+    <p>© 2025 Adarsh Sinha | Profile Page Website</p>
 </footer>
 
 </body>
 </html>
-
